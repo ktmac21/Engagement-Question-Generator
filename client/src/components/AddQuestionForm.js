@@ -5,7 +5,7 @@ import { axios } from "../axios"
 
 const AddQuestionForm = () => {
   const [enteredQuestion, setEnteredQuestion] = useState({
-    question: ''
+    question: ""
   });
   
 
