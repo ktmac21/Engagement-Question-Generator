@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import React from 'react'
 import { axios } from "../axios"
+import './GetQuestionBtn.css'
 
 
 const GetQuestionBtn = () => {
@@ -25,12 +26,15 @@ const GetQuestionBtn = () => {
   // }, []);
 
   return (
-    <div>
+    <div className="container">
       <button className="button" onClick={getQuestion}>
         Get Question
       </button>
-      {question.question}
-    </div>
+      <div >
+        {question.question}
+        </div>
+        </div>
+    
   );
 };
         

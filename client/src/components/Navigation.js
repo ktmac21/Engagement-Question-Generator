@@ -1,18 +1,22 @@
 import React from 'react';
 import logo from '../images/questionMark.png'
+import { Link } from 'react-router-dom'
+import './Navigation.css'
 
 const Navigation = () => {
   return (
-    <>
-      <nav href="/">
-        <img src={logo} alt="logo" height="30" width="100" />
-
-        <div link="/about">About</div>
-        <div link="/addQuestion">Add a question!</div>
-
-        <div link="/contact">Contact Us</div>
+    <div className="navContainer">
+      <Link to="/">
+        <img src={logo} alt="logo" height="100" width="200" />
+      </Link>
+      <nav className="navbar">
+        <div>
+          <Link to="/about" className="link">About</Link>
+          <Link to="/add"className="link">Add a question!</Link>
+          <Link to="/contact"className="link">Contact Us</Link>
+        </div>
       </nav>
-    </>
+    </div>
   );
 };
 
