@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import React from 'react'
-import { axios } from "../axios"
+import React from 'react';
+import { axios } from "../axios";
+import './AddQuestionForm.css';
 
 
 const AddQuestionForm = () => {
@@ -18,7 +19,7 @@ const AddQuestionForm = () => {
 
     const newQuestion = { question: enteredQuestion.question };
     await axios.post("/questions/add", newQuestion).catch((error) => console.log(error))
-    
+
 
     console.log("New Question:", newQuestion);
 
@@ -27,17 +28,20 @@ const AddQuestionForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>Add an engagement question!
+    <div className="container">
+    <form className='container2' onSubmit={handleSubmit}>
+      <div>Add an engagement question!</div>
           <input 
           value={enteredQuestion.question}
           type="text"
           placeholder="Add a question"
           onChange={handleChange}
           />
-      </div>
-      <button type="submit">Add question</button>
+      
+      <button className='button' type="submit">Submit</button>
     </form>
+    
+    </div>
   );
 };
 

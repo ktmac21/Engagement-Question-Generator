@@ -1,5 +1,5 @@
 import Navigation from './components/Navigation';
-import GetQuestionBtn from './components/GetQuestionBtn';
+import GetAQuestion from './components/GetAQuestion';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import AddQuestionForm from './components/AddQuestionForm';
@@ -9,17 +9,19 @@ import Contact from './components/Contact';
 function App() {
   
   return (
+    <div className='App'>
     <BrowserRouter>
       
         <Navigation />
         <Routes>
-          <Route path='/' element={<GetQuestionBtn/>} />
+          <Route path='/' element={<GetAQuestion/>} />
           <Route path="/about" element={<About />} />
           <Route path="/add" element={<AddQuestionForm />} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
       
     </BrowserRouter>
+    </div>
   );
 }
 

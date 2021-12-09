@@ -1,0 +1,26 @@
+    .button {
+        height: 50px;
+        width: 500px;
+        color: white;  
+        border-radius: 5px; 
+        background-color: black;
+        font-size: 20px;
+    }
+
+.button:hover {
+    box-shadow: 0 5px 15px black;
+    cursor: pointer;
+}
+
+.container1 {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.questionElement {
+    font-family: fantasy;
+    font-size: 80px; 
+    text-align: center;
+    margin-top: 50px; 
+}

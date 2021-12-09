@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import React from 'react'
-import { axios } from "../axios"
-import './GetQuestionBtn.css'
+import { useState } from 'react';
+import React from 'react';
+import { axios } from "../axios";
+import './GetAQuestion.css'; 
 
 
-const GetQuestionBtn = () => {
+const GetAQuestion = () => {
   const [question, setQuestion] = useState([]);
-  
+
   const getQuestion = async () => {
     const response = await axios
       .get("/questions")
@@ -20,23 +20,15 @@ const GetQuestionBtn = () => {
       );
   };
 
-  // useEffect(() => {
-    
-  //   getQuestion();
-  // }, []);
-
   return (
-    <div className="container">
+    <div className="container1">
       <button className="button" onClick={getQuestion}>
         Get Question
       </button>
-      <div >
-        {question.question}
-        </div>
-        </div>
-    
+      <p className='questionElement'>{question.question}</p>
+    </div>
   );
 };
         
 
-export default GetQuestionBtn; 
+export default GetAQuestion; 
