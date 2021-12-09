@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import AddQuestionForm from './components/AddQuestionForm';
 import About from './components/About'; 
-import Contact from './components/Contact'; 
+
 
 function App() {
   
@@ -17,7 +17,6 @@ function App() {
           <Route path='/' element={<GetAQuestion/>} />
           <Route path="/about" element={<About />} />
           <Route path="/add" element={<AddQuestionForm />} />
-          <Route path="/contact" element={<Contact/>} />
         </Routes>
       
     </BrowserRouter>

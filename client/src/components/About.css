@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200;600;700&display=swap');
+
+h1{
+    font-family: "Bebas Neue", cursive;
+    color: white; 
+    font-size: 80px; 
+    text-align: center; 
+
+}
+.about {
+    font-family: "Bebas Neue", cursive;
+    color: #01295f;
+    font-size: 50px; 
+    text-align: center; 
+    margin: 20px 50px 0px 50px
+}
+
+.description {
+    color: #5F7470;
+    font-size: 20px;
+    font-family: "Bebas Neue", cursive;
+    margin: 20px 50px 0px 50px;
+    text-align: center;
+}

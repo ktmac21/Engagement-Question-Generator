@@ -1,24 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200;600;700&display=swap");
+
 .navContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 20px 20px 20px;
+  border-bottom: 2px solid white;
+  
+
 }
 
 .navbar {
-    display: flex; 
-    margin-top: 10px; 
-    margin-right: 30px;
+  margin-right: 10px;
+  
 }
 
+
+
 .link {
-    color: black; 
-    padding-left: 15px;
-    font-size: 30px;
-    text-decoration: none;
-    font-family: fantasy;
-    
+  color: #01295f;
+  padding-left: 15px;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
 }
 
 .link:hover {
-    color: grey; 
+  color: white;
 }
