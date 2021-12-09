@@ -29,19 +29,25 @@ const AddQuestionForm = () => {
   return (
     <>
       <div className="card">
-      <div className="heading">Add your own </div>
-      <div className="heading2">icebreaker question!</div>
+        <div className="heading">Add your own </div>
+        <div className="heading2">icebreaker question!</div>
       </div>
+      <img
+        src={questionMark}
+        alt="questionMark"
+        height="200"
+        width="200"
+        className="questionMark"
+      />
+
       <div className="card">
-      <div className="heading3">Got questions? </div>
-      <div className="heading4">Please add one! </div>
-      <div className="heading4">Keep it above the line!!</div>
+        <div className="heading3">Got questions? </div>
+        <div className="heading4">Please add one! </div>
+        <div className="heading4">Keep it above the line!!</div>
       </div>
 
       <div className="container">
-        
         <form className="container2" onSubmit={handleSubmit}>
-        <img src={questionMark} alt='questionMark' height="200" width="200" className='questionMark'/>
           <input
             value={enteredQuestion.question}
             type="text"
