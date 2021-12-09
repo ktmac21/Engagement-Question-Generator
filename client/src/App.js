@@ -7,19 +7,16 @@ import About from './components/About';
 
 
 function App() {
-  
   return (
-    <div className='App'>
-    <BrowserRouter>
-      
+    <div className="App">
+      <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path='/' element={<GetAQuestion/>} />
+          <Route path="/" element={<GetAQuestion />} />
           <Route path="/about" element={<About />} />
           <Route path="/add" element={<AddQuestionForm />} />
         </Routes>
-      
-    </BrowserRouter>
+      </BrowserRouter>
     </div>
   );
 }
