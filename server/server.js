@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 
 require("dotenv").config();
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/questions", questionsRoute);
