@@ -8,7 +8,7 @@ mongoose.connect(process.env.MONGO_DB || 'mongodb://localhost/engagement',  {
 
 })
 .then(() => console.log("Database connected"))
-.catch(err => console.log( err ));
+.catch(error => console.log( error ));
 
 
 module.exports = mongoose.connection; 
