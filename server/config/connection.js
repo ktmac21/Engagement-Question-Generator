@@ -1,11 +1,10 @@
 const mongoose = require('mongoose'); 
 
 mongoose.connect(
-    process.env.ATLAS_URL || 'mongodb://localhost/engagement',  {
+    process.env.ATLAS_URI || 'mongodb://localhost/engagement',  {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
+ 
 });
 
 

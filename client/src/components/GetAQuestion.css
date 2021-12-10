@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200;600;700&display=swap');
 
 .button1 {
-  height: 50px;
+  height: 60px;
   width: 200px;
   color: white;
-  border-radius: 5px;
+  border-radius: 30px;
   background-color: #01295f;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Bebas Neue", cursive;
 }
 
