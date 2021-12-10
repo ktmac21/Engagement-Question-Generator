@@ -1,7 +1,7 @@
 const router = require('express').Router();
 let Questions = require('../models/Questions');
 
-router.route('/').get((req, res) => {
+router.route('/').get( async (req, res) => {
     Questions.find()
     .then(question => res.json(question))
     .catch(err => res.status(400).json('Error: ' + err));
