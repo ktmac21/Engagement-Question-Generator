@@ -19,7 +19,7 @@ const AddQuestionForm = () => {
     const newQuestion = { question: enteredQuestion.question };
     await axios
       .post("/questions/add", newQuestion)
-      .then((response ) => consoloe.log(response))
+      .then((response ) => console.log(response))
       .catch((error) => console.log(error));
 
     console.log("New Question:", newQuestion);
