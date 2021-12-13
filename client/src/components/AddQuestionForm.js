@@ -17,13 +17,15 @@ const AddQuestionForm = () => {
     e.preventDefault();
 
     const newQuestion = { question: enteredQuestion.question };
-    await axios
-      .post("/questions/add", newQuestion)
-      .catch((error) => console.log(error));
+    await axios.post("/questions/add", newQuestion);
+
+    try {
+      setEnteredQuestion({ question: "" });
+    } catch (error) {
+      setEnteredQuestion({ error, isLoading: false });
+    }
 
     console.log("New Question:", newQuestion);
-
-    setEnteredQuestion({ question: "" });
   };
 
   return (
@@ -47,15 +49,19 @@ const AddQuestionForm = () => {
           </button>
         </form>
       </div>
-    
+
       <div className="card">
         <div className="heading3">Got questions? </div>
         <div className="heading4">Please add one... </div>
         <div className="heading5">Keep it above the line!</div>
-        <img className='arrow' src={upArrow} alt='upArrow' height="50" width="50"/>
+        <img
+          className="arrow"
+          src={upArrow}
+          alt="upArrow"
+          height="50"
+          width="50"
+        />
       </div>
-
-      
     </>
   );
 };
