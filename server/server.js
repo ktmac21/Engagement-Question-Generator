@@ -21,9 +21,6 @@ app.get("*", (req, res) => {
 });
 
 
-
-
-
 db.once("open", () => {
   app.listen(PORT, () => {
     console.log(`Running on port ${PORT}!`);
