@@ -16,8 +16,8 @@ const AddQuestionForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const newQuestion = { question: enteredQuestion.question };
-    await axios.post("/questions/add", newQuestion);
+    const newQuestion = await { question: enteredQuestion.question };
+     axios.post("/questions/add", newQuestion);
 
     try {
       setEnteredQuestion({ question: "" });
