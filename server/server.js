@@ -7,7 +7,7 @@ const app = express();
 
 const PORT = process.env.PORT || 3001;
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/questions", questionsRoute);
 app.use("/images", express.static(path.join(__dirname, "../client/images")));
