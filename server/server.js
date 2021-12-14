@@ -4,13 +4,13 @@ const path = require("path");
 const db = require("./config/connection");
 const questionsRoute = require("./routes/questions");
 const app = express();
-
 const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use("/questions", questionsRoute);
-app.use("/images", express.static(path.join(__dirname, "../client/images")));
+
+// app.use("/images", express.static(path.join(__dirname, "../client/images")));
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
