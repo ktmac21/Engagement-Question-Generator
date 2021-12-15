@@ -19,6 +19,7 @@
     "concurrently": "^6.4.0"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "server": "^1.0.37"
   }
 }
