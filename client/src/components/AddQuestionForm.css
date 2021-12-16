@@ -39,16 +39,15 @@ input {
   background-color: #e8db7d;
   font-family: "Bebas Neue", cursive;
   border: 2px white solid;
-  border-top: 0px; 
+  border-top: 0px;
   border-right: 0px;
   border-left: 0px;
   cursor: text;
 }
 
 input:focus {
-    outline: none; 
+  outline: none;
 }
-
 
 .heading {
   font-family: "Bebas Neue", cursive;
@@ -96,7 +95,33 @@ input:focus {
   display: block;
   margin-left: auto;
   margin-right: 50px;
-  margin-top: -60px; 
+  margin-top: -60px;
   border-bottom: 2px, white, solid;
 }
 
+@media only screen and (max-width: 560px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .heading2 {
+    font-size: 28px;
+  }
+
+  .heading3 {
+    font-size: 28px;
+  }
+
+  .heading4 {
+    font-size: 28px;
+  }
+
+  .heading5 {
+    font-size: 28px;
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
+}

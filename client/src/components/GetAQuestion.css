@@ -41,4 +41,20 @@
 
 }
 
+@media only screen and (max-width: 560px) {
+  img {
+    width: 150px;
+    height: 150px;
+    
+  }
+
+  .directions {
+   font-size: 25px;
+  }
+
+  .questionElement {
+    font-size: 30px; 
+  }
+}
+
 
