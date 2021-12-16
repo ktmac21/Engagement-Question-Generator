@@ -6,16 +6,11 @@
   justify-content: space-between;
   margin: 20px 20px 20px 20px;
   border-bottom: 2px solid white;
-  
-
 }
 
 .navbar {
   margin-right: 10px;
-  
 }
-
-
 
 .link {
   color: #01295f;
@@ -30,17 +25,11 @@
 }
 
 @media only screen and (max-width: 560px) {
-  .navContainer {
-    display: block;
-    text-align: center;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: column; 
-  }
-
   .link {
-    font-size: 20px; 
+    font-size: 20px;
+  }
+
+  .navContainer {
+    margin-top: 30px; 
   }
 }

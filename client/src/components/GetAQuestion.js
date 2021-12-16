@@ -28,7 +28,7 @@ const GetAQuestion = () => {
         Get Question
       </button>
       <p className="questionElement">{question.question}</p>
-      <img src={upArrow} alt="upArrow" height="200" width="200" />
+      <img className="upArrow" src={upArrow} alt="upArrow" height="200" width="200" />
       <div className="directions">
         Click button above to retrieve a random question
       </div>

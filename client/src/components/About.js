@@ -11,8 +11,8 @@ const About = () => {
                 Here is a tool!
             </div>
             <div className='description'>
-                Welcome to Forced Fun! Does your company strongly encourage you to be engaged? Do you need to think of a question
-                to ask your fellow associates but have run out of questions? Please use Forced Fun!
+                Welcome to Forced Fun! Does your employer strongly encourage you to be engaged? Do you need to think of a question
+                to ask your fellow associates but can't think of one off the top of your head? Please try out Forced Fun!
             </div>
         </div>
     )

@@ -87,7 +87,7 @@ input:focus {
   color: #01295f;
   text-align: right;
   margin-right: 30px;
-  border-bottom: white solid 5px;
+  border-bottom: white solid 2px;
   padding-bottom: 60px;
 }
 
@@ -96,32 +96,48 @@ input:focus {
   margin-left: auto;
   margin-right: 50px;
   margin-top: -60px;
-  border-bottom: 2px, white, solid;
+  
 }
 
 @media only screen and (max-width: 560px) {
   .heading {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .heading2 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .heading3 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .heading4 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .heading5 {
-    font-size: 28px;
+    font-size: 35px;
+    margin-right: 20px;
+    margin-left: 20px
   }
 
   img {
     height: 40px;
     width: 40px;
+  }
+
+  input {
+    width: 200px; 
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-top: 50px; 
   }
 }

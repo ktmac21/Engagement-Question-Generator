@@ -32,7 +32,7 @@ const AddQuestionForm = () => {
     <>
       <div className="card">
         <div className="heading">Add your own </div>
-        <div className="heading2">icebreaker question!</div>
+        <div className="heading2">icebreaker question</div>
       </div>
 
       <div className="container">
