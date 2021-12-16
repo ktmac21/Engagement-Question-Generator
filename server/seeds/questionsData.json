@@ -173,6 +173,14 @@
 
     {
         "question": "Horoscopes, real or silly?"
+    },
+
+    {
+        "question": "What is your favorite band?"
+    },
+
+    {
+        "question": "What is your favorite breakfast food?"
     }
 
 ]
