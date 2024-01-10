@@ -27,7 +27,7 @@ https://stark-escarpment-53173.herokuapp.com/
 4. Express
 5. Axios
 6. Mongoose
-7. Heroku 
+7. Netlify 
 ​
 ## Usage:
 1. Click "Get Question" button on homepage to retrieve a random question  
