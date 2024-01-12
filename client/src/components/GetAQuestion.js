@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
-import { axios } from "../axios";
+import axios from 'axios'
 
 import './GetAQuestion.css'; 
 import upArrow from '../images/upArrow.png'
@@ -10,7 +10,7 @@ const GetAQuestion = () => {
   const [question, setQuestion] = useState([]);
 
   const getQuestion = async () => {
-    const response = await axios.get("/questions");
+    const response = await axios.get("http://localhost:5555/question");
     try {
       setQuestion(
         response.data[Math.floor(Math.random(question) * response.data.length)]
@@ -18,8 +18,6 @@ const GetAQuestion = () => {
     } catch (error) {
       setQuestion({ error, isLoading: false });
     }
-
-    console.log("Response: ", response);
   };
 
   return (

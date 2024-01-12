@@ -1,29 +1,36 @@
-require("dotenv").config();
-const express = require("express");
-const path = require("path");
-const db = require("./config/connection");
-const questionsRoute = require("./routes/questions");
+
+import express  from "express";
+import { PORT, MONGO_DB_URL  } from "./connection.js";
+import mongoose from "mongoose";
+import cors from "cors";
+import questionsRoute from "./routes/questionsRoute.js";
+
 const app = express();
-const PORT = process.env.PORT || 3001;
 
-app.use(express.urlencoded({ extended: false }));
+
 app.use(express.json());
-app.use("/questions", questionsRoute);
+app.use(express.urlencoded({extended: true}));
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+})
 
-app.use("/images", express.static(path.join(__dirname, "../client/images")));
-
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/build")));
-}
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build/index.html"));
-});
+app.use(cors({
+  origin: "http://localhost:3000",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type"]
+}))
 
 
-db.once("open", () => {
-  app.listen(PORT, () => {
-    console.log(`Running on port ${PORT}!`);
-    console.log("MongoDB database connection established successfully!");
+app.use('/question', questionsRoute);
+  
+mongoose
+  .connect(MONGO_DB_URL)
+  .then(() => {
+    console.log("Connected to MongoDB");
+    app.listen(PORT, () => {
+      console.log(`Running on port ${PORT}!`);
+    });
+  })
+  .catch((err) => {
+    console.log(err);
   });
-});

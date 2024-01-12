@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import { axios } from "../axios";
+import axios from "axios";
 import "./AddQuestionForm.css";
 import upArrow from "../images/upArrow.png";
 
@@ -17,7 +17,7 @@ const AddQuestionForm = () => {
     e.preventDefault();
 
     const newQuestion = await { question: enteredQuestion.question };
-     axios.post("/questions/add", newQuestion);
+     axios.post('http://localhost:5555/question/add', newQuestion);
 
     try {
       setEnteredQuestion({ question: "" });
