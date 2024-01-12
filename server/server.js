@@ -10,12 +10,9 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-})
 
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: "https://question-generator-hknh.onrender.com",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"]
 }))
