@@ -27,8 +27,8 @@ https://stark-escarpment-53173.herokuapp.com/
 4. Express
 5. Axios
 6. Mongoose
-7. Netlify
-8. Render 
+7. Netlify - Front End
+8. Render - Back End
 ​
 ## Usage:
 1. Click "Get Question" button on homepage to retrieve a random question  
