@@ -17,7 +17,7 @@ const AddQuestionForm = () => {
     e.preventDefault();
 
     const newQuestion = await { question: enteredQuestion.question };
-     axios.post('https://question-generator-hknh.onrender.com/question/add', newQuestion);
+     axios.post('https://engagement-question-generator.onrender.com/question/add', newQuestion);
 
     try {
       setEnteredQuestion({ question: "" });

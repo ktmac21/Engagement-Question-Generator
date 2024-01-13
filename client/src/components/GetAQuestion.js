@@ -10,7 +10,7 @@ const GetAQuestion = () => {
   const [question, setQuestion] = useState([]);
 
   const getQuestion = async () => {
-    const response = await axios.get("https://question-generator-hknh.onrender.com/question");
+    const response = await axios.get("https://engagement-question-generator.onrender.com/question");
     try {
       setQuestion(
         response.data[Math.floor(Math.random(question) * response.data.length)]

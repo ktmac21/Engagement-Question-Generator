@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 app.use(cors({
-  origin: "https://question-generator-hknh.onrender.com",
+  origin: "https://engagement-question-generator.onrender.com",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"]
 }))
