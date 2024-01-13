@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 app.use(cors({
-  origin: "https://curious-horse-e7f3d3.netlify.app",
+  origin: "https://inquisitive-cascaron-3d4fb5.netlify.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"]
 }))
