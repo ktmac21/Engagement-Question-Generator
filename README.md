@@ -12,17 +12,17 @@
 * [Questions](#Questions)
 
 ## Description:
-As my first post-graduate project I created a generator for ice breaker questions. Daily meetings at my current workplace require that I come up with one of these "engagement questions" to bond our team. In response I have developed Forced Fun, a simple app in which the user clicks the "Get Question" button to have a random, get-to-know-you, office appropriate, question that will surely support team building. Should the user feel inspired, they can add their own unique question to the database!
+I created an app in which a user can randomly generate an ice breaker question. At the time, daily meetings at my workplace required that I come up an "engagement question" to bond our team. I developed Forced Fun, a simple app in which the user clicks the "Get Question" button to have a random, get-to-know-you, office appropriate, question that will surely support team building. Should the user feel inspired, they can add their own unique question to the database!
 
 ## Screenshot:
 ![forced](https://user-images.githubusercontent.com/83046421/146660358-c59f1ecb-0567-4228-b634-9e4857402f1d.png)
 
 ## Deployed:
-https://stark-escarpment-53173.herokuapp.com/
+https://forced-fun-app.netlify.app
 
 ## Technologies Used:
 1. HTML & CSS
-2. React.js
+2. React
 3. MongoDB Atlas
 4. Express
 5. Axios
@@ -41,9 +41,6 @@ https://opensource.org/licenses/MIT
 ​
 ## Contributors:
 - Kate Eagles   
-​
-## Tests:
-No tests at this time.
 ​
 ## Questions:
 ​
